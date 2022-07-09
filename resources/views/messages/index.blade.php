@@ -26,6 +26,9 @@
         </table>
     @endif
     
+    {{--　ページネーションのリンク  --}}
+    {{ $messages->links() }}
+    
     {{-- メッセージ作成ページのリンク --}}
     {!! link_to_route('messages.create', '新規メッセージの投稿', [], ['class' =>'btn btn-primary']) !!}
 
